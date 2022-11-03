@@ -1,0 +1,20 @@
+# Conda installation 3.11.22			
+	#Download via WINSCP		
+		#Go here: https://docs.conda.io/en/latest/miniconda.html#linux-installers. Miniconda installation info is here	
+		#Download miniconda Python 3.9	Miniconda3 Linux 64-bit
+		#Transfer "Miniconda3-latest-Linux-x86_64.sh" file with WINCSP to your terminal folder: /home/e.dikareva/tools/conda	
+		#Go to the folder containing the downloaded file: 	
+			cd /home/e.dikareva/tools/conda
+		#Run 	
+			bash Miniconda3-latest-Linux-x86_64.sh
+		#Follow installation instructions and press ENTER and YES when needed	
+	#Download directly to terminal		
+		#Go here: https://docs.conda.io/en/latest/miniconda.html#linux-installers. Miniconda installation info is here	
+		#Find the version you want to download: Python 3.9	Miniconda3 Linux 64-bit
+		#Go to the folder where you want the tool be downloaded: 	
+			cd /home/e.dikareva/tools/conda
+		#Run to download "Miniconda3-latest-Linux-x86_64.sh" file	
+			wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.12.0-Linux-x86_64.sh 
+		#Run 	
+			bash Miniconda3-latest-Linux-x86_64.sh
+		#Follow installation instructions and press ENTER and YES when needed
