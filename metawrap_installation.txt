@@ -1,0 +1,123 @@
+#metawrap installation
+	#go to https://github.com/bxlab/metaWRAP
+	#Run
+		git clone https://github.com/bxlab/metaWRAP.git
+	#Make metaWRAP executable
+		#Go to home directory
+			cd
+		#Check that bashrc is there
+			ls -lah
+		#Open bashrc to modify
+			vi .bashrc
+		#Press I to activate INSERT mode
+		#Insert, copy the next two lines
+			#add metawrap to path
+			export PATH="/home/e.dikareva/metaWRAP/bin/:$PATH"
+		#Save by esq -> :x
+		#Restart PuTTy session
+	#Create a metaWRAP enviroment
+		mamba create -y -n metawrap python=2.7
+		conda activate metawrap
+	#Install all metaWRAP dependancies with conda
+		conda config --add channels defaults
+		conda config --add channels conda-forge
+		conda config --add channels bioconda
+		conda config --add channels ursky
+		mamba install --only-deps -c ursky metawrap-mg
+#Database installation
+	#Before installing any databases activate metawrap enviroment
+		conda activate metawrap
+	#ftp is not working in hospital
+	#CheckM database:
+		#Here is the official webpage: https://data.ace.uq.edu.au/public/CheckM_databases/
+		#Go to database folder: 
+			cd 
+			mkdir checkm
+			cd checkm
+		#Now manually download the database:
+			wget https://data.ace.uq.edu.au/public/CheckM_databases/checkm_data_2015_01_16.tar.gz
+			tar -xvf *.tar.gz
+			rm *.gz
+			cd ..
+		#Set root derictory for checkM
+			checkm data setRoot
+			#if it want to path to be specified give this:
+				/ifs/data/mmbresearch/evgenia/databases/checkm
+	#NCBI taxonomy
+		#Go to database folder: 
+			cd $database
+			mkdir ncbi_tax
+			cd ncbi_tax
+			#the original download place is here: https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/
+			wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump.tar.gz
+			tar -xvf taxdump.tar.gz
+		#Find where config-metawrap file is
+			which config-metawrap
+		#Copy path to ncbi_tax: /ifs/data/mmbresearch/evgenia/databases/ncbi_tax
+		#Go to the path: ~/metaWRAP/bin/config-metawrap
+		#Open config-metawrap
+			vi config-metawrap
+			#Change the TAXDUMP path to yours: /ifs/data/mmbresearch/evgenia/databases/ncbi_tax
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	#Create or copy path to your databases: /ifs/data/mmbresearch/evgenia/databases 
+	#Go to 
+		cd /home/e.dikareva/metaWRAP/bin
+	#Open 
+		vi config-metawrap
+	#Edit the paths to databases
+	

@@ -1,0 +1,7 @@
+#virsorter2 installation
+	#Go to: https://github.com/jiarong/VirSorter2
+		conda create -n virsorter2 -c conda-forge -c bioconda virsorter=2
+		conda activate virsorter2
+		rm -rf virsorter_database
+		#remove the whole diretory specified by -d
+		virsorter setup -d virsorter_database -j 4

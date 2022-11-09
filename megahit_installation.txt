@@ -1,0 +1,7 @@
+#megahit instllation
+	#Go to https://github.com/voutcn/megahit
+	#Create enviroment
+		conda create --name megahit
+		conda activate megahit
+	#Installation
+		conda install -c bioconda megahit

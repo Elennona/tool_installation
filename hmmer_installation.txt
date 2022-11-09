@@ -1,0 +1,12 @@
+#hmmer installation
+	#Go here: http://hmmer.org/documentation.html
+	#Create enviroment
+		conda create --name hmmer
+		conda activate hmmer
+		conda install -c bioconda hmmer
+		conda deactivate
+	#Databses installation
+		#create hmm folder in database folder
+			cd /ifs/data/mmbresearch/evgenia/databases/hmm
+			wget https://www.genome.jp/ftp/db/kofam/profiles.tar.gz
+			wget https://www.genome.jp/ftp/db/kofam/ko_list.gz

@@ -1,0 +1,15 @@
+#checkv installation
+	#Go to here: https://bitbucket.org/berkeleylab/checkv/src/master/
+	#Create enviroment
+		conda create --name checkv
+		conda activate checkv
+	#Installation
+		conda install -c conda-forge -c bioconda checkv
+	#Database
+		#Go to database folder: 
+			cd $database
+			mkdir checkv_database
+			cd checkv_database
+			checkv download_database ./
+		#copy the path to the downloaded database:
+			export CHECKVDB=/ifs/data/mmbresearch/evgenia/databases/checkv_database/checkv-db-v1.4

@@ -1,0 +1,7 @@
+#prodigal installation
+	#Go here: https://github.com/hyattpd/Prodigal
+	#Create enviroment
+		conda create --name prodigal
+		conda activate prodigal
+		conda install -c bioconda prodigal
+		conda deactivate

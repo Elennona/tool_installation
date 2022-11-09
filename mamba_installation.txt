@@ -1,0 +1,5 @@
+#MAMBA installation
+	#Before MAMBA installation conda/anaconda/minicoda should be installed
+	#Got to https://github.com/mamba-org/mamba and check the lateest intallation instructions
+	#Run 
+		conda install mamba -n base -c conda-forge

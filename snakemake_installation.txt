@@ -1,0 +1,7 @@
+#snakemake installation
+	#Go to https://snakemake.readthedocs.io/en/stable/
+	#Make sure you are in base
+		mamba create -c conda-forge -c bioconda -n snakemake snakemake
+	#Activate snakemake enviroment
+		conda activate snakemake
+	
